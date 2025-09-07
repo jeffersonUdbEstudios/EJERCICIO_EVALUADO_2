@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva Tarea"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Ingresa el título de la tarea"
+        android:textColor="@color/black"
+        android:textColorHint="@color/medium_gray"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Descripción -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="Ingresa la descripción de la tarea"
+        android:textColor="@color/black"
+        android:textColorHint="@color/medium_gray"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Checkbox para marcar como finalizada (solo visible en modo edición) -->
+    <CheckBox
+        android:id="@+id/cbMarkAsCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marcar como finalizada"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp"
+        android:visibility="gone" />
+
+    <!-- Botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textColor="@color/black"
+            android:background="@drawable/button_outline_background"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Guardar"
+            android:textColor="@color/white"
+            android:background="@drawable/button_selector"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout> 
